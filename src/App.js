@@ -1,5 +1,6 @@
 import './App.css';
 import { Twit } from './components';
+import './fonts/Montserrat-Regular.ttf'
 
 function App() {
   return (
