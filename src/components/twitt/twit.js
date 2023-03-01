@@ -1,12 +1,13 @@
 import React from "react";
-import { Card } from './twit.styled'
+import { Logo, Avatar, Background } from "../../assets"
+import { Card } from "./twit.styled";
 
 const twit = () => {
   return (
     <Card>
-      {/* <img />
-      <img /> 
-          <img />*/}
+      <img src={Logo} alt="logo" />
+      <img src={Background} alt="background" />
+      <img src={Avatar} alt="avatar" />
       <p>
         <span></span> tweets
       </p>
