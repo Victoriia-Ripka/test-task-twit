@@ -59,11 +59,21 @@ export const Line = styled.span`
     inset 0px -1.71846px 3.43693px #ae7be3, inset 0px 3.43693px 2.5777px #fbf8ff;
 `;
 
-export const InfoDiv = styled.div`
+export const InfoUl = styled.ul`
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+`;
+
+export const InfoLi = styled.li`
+  margin-top: 16px;
+  &:first-child {
+    margin-top: 0;
+  }
 `;
 
 export const Text = styled.p`
