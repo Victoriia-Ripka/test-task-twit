@@ -34,10 +34,9 @@ export const BackImg = styled.img`
 
 export const AvatarImg = styled.img`
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 200px;
+  left: 140px;
   z-index: 2;
-  transform: translate(-50%, -50%);
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
