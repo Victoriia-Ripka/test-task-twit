@@ -55,7 +55,15 @@ const Twit = () => {
           <Span>{followers.toLocaleString("en-US")}</Span>
           <Text> followers</Text>
         </InfoLi>
-        <Button type="button" onClick={() => handleClick()}>
+        <Button
+          type="button"
+          onClick={handleClick}
+          style={
+            followed
+              ? { backgroundColor: "#5CD3A8" }
+              : { backgroundColor: "#EBD8FF" }
+          }
+        >
           {followed ? "following" : "follow"}
         </Button>
       </InfoUl>

@@ -100,7 +100,6 @@ export const Button = styled.button`
   width: 196px;
   height: 50px;
 
-  background: #ebd8ff;
   box-shadow: 0px 3.4px 3.4px rgba(0, 0, 0, 0.25);
   border-radius: 10.3px;
   border-color: transparent;
@@ -112,12 +111,10 @@ export const Button = styled.button`
   text-transform: uppercase;
   color: #373737;
 
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    background: #5cd3a8;
     transform: scale(1.15);
   }
 `;
