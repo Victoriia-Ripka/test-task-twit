@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "user": "Elon Musk",
+      "tweets": 0,
+      "followers": 0,
+      "avatar": "Boy.png"
+    },
+    {
+      "id": 2,
+      "user": "Marta",
+      "tweets": 21,
+      "followers": 233,
+      "avatar": "Boy.png"
+    },
+    {
+      "id": 3,
+      "user": "Reeve Musk",
+      "tweets": 777,
+      "followers": 100500,
+      "avatar": "Boy.png"
+    },
+    {
+      "id": 4,
+      "user": "Victoriia Ripka",
+      "tweets": 7775,
+      "followers": 10500,
+      "avatar": "Boy.png"
+    },
+    {
+      "id": 5,
+      "user": "John Green",
+      "tweets": 777456456,
+      "followers": 1005,
+      "avatar": "Boy.png"
+    }
+  ]
+}
