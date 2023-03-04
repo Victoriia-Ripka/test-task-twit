@@ -34,16 +34,10 @@ export const BackImg = styled.img`
 
 export const AvatarImg = styled.img`
   position: absolute;
-  top: 200px;
-  left: 140px;
+  top: 50%;
+  left: 50%;
   z-index: 2;
-
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    transform: scale(1.15);
-  }
+  transform: translate(-50%, -50%);
 `;
 
 export const Line = styled.span`

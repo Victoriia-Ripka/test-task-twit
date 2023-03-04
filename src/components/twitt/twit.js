@@ -1,4 +1,5 @@
-import React, { useState, useRef, useEffect } from "react";
+/* eslint-disable no-unused-vars */
+import React, { useState } from "react";
 import { Logo, Avatar, Background } from "../../assets";
 import {
   Card,
@@ -14,7 +15,7 @@ import {
 } from "./twit.styled";
 
 const Twit = () => {
-  const [twitts, _] = useState(777);
+  const [twitts, setTwitts] = useState(777);
   const [followers, setFollowers] = useState(
     window.localStorage.getItem("followers")
       ? JSON.parse(window.localStorage.getItem("followers"))
@@ -26,28 +27,18 @@ const Twit = () => {
       : false
   );
 
-  const firstUpdate = useRef(true);
-
-  useEffect(() => {
-    if (firstUpdate.current) {
-      firstUpdate.current = false;
-      console.log("first render with local ", Date.now());
-      return;
+  const handleClick = () => {
+    setFollowed(!followed);
+    if (!followed) {
+      window.localStorage.setItem("followed", JSON.stringify(true));
+      window.localStorage.setItem("followers", JSON.stringify(followers + 1));
+      setFollowers(followers + 1);
     } else {
-      console.log("second", Date.now());
-      if (followed) {
-        window.localStorage.setItem("followed", JSON.stringify(true));
-        window.localStorage.setItem("followers", JSON.stringify(followers + 1));
-        setFollowers(followers + 1);
-        console.log("add");
-      } else {
-        window.localStorage.setItem("followed", JSON.stringify(false));
-        window.localStorage.setItem("followers", JSON.stringify(followers - 1));
-        setFollowers(followers - 1);
-        console.log("minus");
-      }
+      window.localStorage.setItem("followed", JSON.stringify(false));
+      window.localStorage.setItem("followers", JSON.stringify(followers - 1));
+      setFollowers(followers - 1);
     }
-  }, [followed]);
+  };
 
   return (
     <Card>
@@ -64,7 +55,7 @@ const Twit = () => {
           <Span>{followers.toLocaleString("en-US")}</Span>
           <Text> followers</Text>
         </InfoLi>
-        <Button type="button" onClick={() => setFollowed(!followed)}>
+        <Button type="button" onClick={() => handleClick()}>
           {followed ? "following" : "follow"}
         </Button>
       </InfoUl>
