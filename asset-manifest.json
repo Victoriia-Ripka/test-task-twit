@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/test-task-twit/static/css/main.bd862dc3.css",
+    "main.js": "/test-task-twit/static/js/main.f0cdc3ad.js",
+    "static/js/787.e8769ff5.chunk.js": "/test-task-twit/static/js/787.e8769ff5.chunk.js",
+    "static/media/Montserrat-Regular.ttf": "/test-task-twit/static/media/Montserrat-Regular.ceb11275ab638627a643.ttf",
+    "index.html": "/test-task-twit/index.html",
+    "main.bd862dc3.css.map": "/test-task-twit/static/css/main.bd862dc3.css.map",
+    "main.f0cdc3ad.js.map": "/test-task-twit/static/js/main.f0cdc3ad.js.map",
+    "787.e8769ff5.chunk.js.map": "/test-task-twit/static/js/787.e8769ff5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd862dc3.css",
+    "static/js/main.f0cdc3ad.js"
+  ]
+}
